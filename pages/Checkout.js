@@ -31,7 +31,7 @@ const Checkout = ({ cart, removeItemInCart, addQty, removeQty, subtotal, clearCa
     const GETUSER = async () => {
         const USER_INFO = await JSON.parse(localStorage.getItem("myuser"))
         const USER_EMAIL = USER_INFO["email"]
-        const RESPONSE = await fetch("http://localhost:3000/api/getuser", {
+        const RESPONSE = await fetch("https://sangam-bharat-app.vercel.app/api/getuser", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
@@ -112,7 +112,7 @@ const Checkout = ({ cart, removeItemInCart, addQty, removeQty, subtotal, clearCa
 
             const cartItems = JSON.parse(localStorage.getItem("cart"))
             const finalTotal = subtotal - (parseInt((subtotal / 100)) * 10)
-            const data = await fetch("http://localhost:3000/api/isTampered", {
+            const data = await fetch("https://sangam-bharat-app.vercel.app/api/isTampered", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
@@ -141,7 +141,7 @@ const Checkout = ({ cart, removeItemInCart, addQty, removeQty, subtotal, clearCa
 
 
                 //check the available quantity or out of stock
-                const outOfStock = await fetch("http://localhost:3000/api/outOfStock", {
+                const outOfStock = await fetch("https://sangam-bharat-app.vercel.app/api/outOfStock", {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json',
@@ -172,7 +172,7 @@ const Checkout = ({ cart, removeItemInCart, addQty, removeQty, subtotal, clearCa
                     // Make API call to the serverless API
                     const finalAddress = { phone, address, pincode, city, state }
                     const id = email
-                    const data = await fetch("http://localhost:3000/api/razorpay", {
+                    const data = await fetch("https://sangam-bharat-app.vercel.app/api/razorpay", {
                         method: "POST",
                         headers: {
                             'Content-Type': 'application/json',
@@ -193,7 +193,7 @@ const Checkout = ({ cart, removeItemInCart, addQty, removeQty, subtotal, clearCa
                             // if (response.length==0) return <Loading/>;
                             console.log(response);
 
-                            const data = await fetch("http://localhost:3000/api/paymentverify", {
+                            const data = await fetch("https://sangam-bharat-app.vercel.app/api/paymentverify", {
                                 method: "POST",
                                 // headers: {
                                 //   // Authorization: 'YOUR_AUTH_HERE'
@@ -241,7 +241,7 @@ const Checkout = ({ cart, removeItemInCart, addQty, removeQty, subtotal, clearCa
 
                     paymentObject.on("payment.failed", async function (response) {
                         // console.log(order.id)
-                        const data = await fetch("http://localhost:3000/api/ifpaymentfailed", {
+                        const data = await fetch("https://sangam-bharat-app.vercel.app/api/ifpaymentfailed", {
                             method: "POST",
                             // headers: {
                             //   // Authorization: 'YOUR_AUTH_HERE'

@@ -34,7 +34,7 @@ const router = useRouter()
     const GETUSER = async () => {
         const USER_INFO = await JSON.parse(localStorage.getItem("myuser"))
         const USER_EMAIL = USER_INFO["email"]
-        const RESPONSE = await fetch("http://localhost:3000/api/getuser", {
+        const RESPONSE = await fetch("https://sangam-bharat-app.vercel.app/api/getuser", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ const router = useRouter()
 
     const HANDLE_UPDATE_PROFILE = async () => {
         
-        const RESPONSE = await fetch("http://localhost:3000/api/updateUser", {
+        const RESPONSE = await fetch("https://sangam-bharat-app.vercel.app/api/updateUser", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
@@ -107,7 +107,7 @@ const router = useRouter()
         }
     }
     const HANDLE_SUBMIT = async() =>{
-        const RESPONSE = await fetch("http://localhost:3000/api/checkPassword", {
+        const RESPONSE = await fetch("https://sangam-bharat-app.vercel.app/api/checkPassword", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
@@ -127,7 +127,7 @@ const router = useRouter()
     const HANDLE_UPDATE = async() =>{
         // console.log(PASSWORD,'  ',CPASSWORD)
         if(PASSWORD === CPASSWORD){
-            const RESPONSE = await fetch("http://localhost:3000/api/updatePassword", {
+            const RESPONSE = await fetch("https://sangam-bharat-app.vercel.app/api/updatePassword", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
