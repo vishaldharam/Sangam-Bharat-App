@@ -8,7 +8,7 @@ const Orders = () => {
     const getUser = async()=>{
         const USER_INFO = await JSON.parse(localStorage.getItem("myuser"))
         const USER_EMAIL = USER_INFO["email"]
-        const RESPONSE = await fetch("http://localhost:3000/api/getOrders", {
+        const RESPONSE = await fetch("https://sangam-bharat-app.vercel.app/api/getOrders", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',

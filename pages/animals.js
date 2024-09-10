@@ -13,37 +13,37 @@ const Animals = ({data}) => {
        <div id="slider" className='bg-white min-h-[115px] relative flex flex-row  justify-start md:justify-start lg:justify-center xl:justify-center w-[100%] z-auto scrollbar-hide overflow-x-scroll scroll whitespace-nowrap scroll-smooth'>
        {/* <div id="slider" className='  py-0 w-full m-auto h-full scrollbar-hide overflow-x-scroll scroll whitespace-nowrap scroll-smooth'> */}
 
-         <Link href={'/dog'}><div className='md:w-[120px] opacity-80 rounded-sm md:h-[70px] w-[100px] h-[80px] inline-block p- md:p-0 m-2 sm:mx-10 md:ml-4 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  rounded-b-lg'>
+         <Link href={'/'}><div className='md:w-[120px] opacity-80 rounded-sm md:h-[70px] w-[100px] h-[80px] inline-block p- md:p-0 m-2 sm:mx-10 md:ml-4 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  rounded-b-lg'>
            <img src={'da.jpg'} className='w-[120px]  opacity-80 rounded-sm md:h-[80px] h-[60px]' alt='' ></img>
            <span className=' text-red-600 py-0.5   text-center  md:ml-1 text-sm font-semibold  px-2 rounded-md  text-[14px]'>Coming soon!</span>
 
          </div></Link>
-         <Link href={'/dog'}><div className='md:w-[120px] opacity-80 rounded-sm md:h-[70px] w-[100px] h-[80px] inline-block p- md:p-0 m-2 sm:mx-10 md:ml-2 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  rounded-b-lg'>
+         <Link href={'/'}><div className='md:w-[120px] opacity-80 rounded-sm md:h-[70px] w-[100px] h-[80px] inline-block p- md:p-0 m-2 sm:mx-10 md:ml-2 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  rounded-b-lg'>
            <img src={'cat.jpg'} className='w-[120px]  opacity-80 rounded-sm md:h-[80px] h-[60px]' alt='' ></img>
            <span className=' text-red-600 py-0.5   text-center  md:ml-1 text-sm font-semibold  px-2 rounded-md  text-[14px]'>Coming soon!</span>
 
          </div></Link>
-         <Link href={'/Animals/Cows'}><div className='md:w-[120px] opacity-80 rounded-sm md:h-[70px] w-[100px] h-[80px] inline-block p- md:p-0 m-2  sm:mx-10 md:ml-2 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  rounded-b-lg'>
+         <Link href={'/'}><div className='md:w-[120px] opacity-80 rounded-sm md:h-[70px] w-[100px] h-[80px] inline-block p- md:p-0 m-2  sm:mx-10 md:ml-2 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  rounded-b-lg'>
            <img src={'cow.jpg'} className='w-[120px]  opacity-80 rounded-sm md:h-[80px] h-[60px]' alt='' ></img>
            <span className=' text-red-600 py-0.5   text-center  md:ml-1 text-sm font-semibold  px-2 rounded-md  text-[14px]'>Coming soon!</span>
 
          </div></Link>
-         <Link href={'/dog'}><div className='md:w-[120px] opacity-80 rounded-sm md:h-[70px] w-[100px] h-[80px] inline-block p- md:p-0 m-2 sm:mx-10 md:ml-2 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  rounded-b-lg'>
+         <Link href={'/'}><div className='md:w-[120px] opacity-80 rounded-sm md:h-[70px] w-[100px] h-[80px] inline-block p- md:p-0 m-2 sm:mx-10 md:ml-2 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  rounded-b-lg'>
            <img src={'buff.webp'} className='w-[120px]  opacity-80 rounded-sm md:h-[80px] h-[60px]' alt='' ></img>
            <span className=' text-red-600 py-0.5   text-center  md:ml-1 text-sm font-semibold  px-2 rounded-md  text-[14px]'>Coming soon!</span>
 
          </div></Link>
-         <Link href={'/dog'}><div className='md:w-[120px] opacity-80 rounded-sm md:h-[70px] w-[100px] h-[80px] inline-block p- md:p-0 m-2 sm:mx-10 md:ml-2 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  rounded-b-lg'>
+         <Link href={'/'}><div className='md:w-[120px] opacity-80 rounded-sm md:h-[70px] w-[100px] h-[80px] inline-block p- md:p-0 m-2 sm:mx-10 md:ml-2 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  rounded-b-lg'>
            <img src={'horse.jpg'} className='w-[120px]  opacity-80 rounded-sm md:h-[80px] h-[60px]' alt='' ></img>
            <span className=' text-red-600 py-0.5   text-center  md:ml-1 text-sm font-semibold  px-2 rounded-md  text-[14px]'>Coming soon!</span>
 
          </div></Link>
-         <Link href={'/dog'}><div className='md:w-[120px] opacity-80 rounded-sm md:h-[70px] w-[100px] h-[80px] inline-block p- md:p-0 m-2 sm:mx-10 md:ml-2 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  rounded-b-lg'>
+         <Link href={'/'}><div className='md:w-[120px] opacity-80 rounded-sm md:h-[70px] w-[100px] h-[80px] inline-block p- md:p-0 m-2 sm:mx-10 md:ml-2 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  rounded-b-lg'>
            <img src={'goat.jpg'} className='w-[120px]  opacity-80 rounded-sm md:h-[80px] h-[60px]' alt='' ></img>
            <span className=' text-red-600 py-0.5   text-center  md:ml-1 text-sm font-semibold  px-2 rounded-md  text-[14px]'>Coming soon!</span>
 
          </div></Link>
-         <Link href={'/dog'}><div className='md:w-[120px] opacity-80 rounded-sm md:h-[70px] w-[100px] h-[80px] inline-block p- md:p-0 m-2 sm:mx-10 md:ml-2 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  rounded-b-lg'>
+         <Link href={'/'}><div className='md:w-[120px] opacity-80 rounded-sm md:h-[70px] w-[100px] h-[80px] inline-block p- md:p-0 m-2 sm:mx-10 md:ml-2 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  rounded-b-lg'>
            <img src={'sheep.jpg'} className='w-[120px]  opacity-80 rounded-sm md:h-[80px] h-[60px]' alt='' ></img>
            <span className=' text-red-600 py-0.5   text-center  md:ml-1 text-sm font-semibold  px-2 rounded-md  text-[14px]'>Coming soon!</span>
 

@@ -82,7 +82,7 @@ export default function Home() {
               <span className=' text-red-600 py-0.5   text-center  md:ml-1 text-sm font-semibold  px-2 rounded-md  text-[14px]'>Coming soon!</span>
             </div></Link>
             <Link href={'/'}><div className='md:w-[130px]  md:mx-8 md:h-[120px] w-[95px] h-[100px] inline-block p-2 md:p-2 m-1  md:ml-5 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  px-2 md:pt-3  rounded-lg'>
-              <img src={'hira.png'} className='bg-white w-full md:h-[70px] opacity-40 mb-2 h-[50px] rounded-sm' alt='pet food' ></img>
+              <img src={'food.png'} className='bg-white w-full md:h-[70px] opacity-40 mb-2 h-[50px] rounded-sm' alt='pet food' ></img>
               <span className=' text-red-600 py-0.5   text-center  md:ml-1 text-sm font-semibold  px-2 rounded-md  text-[14px]'>Coming soon!</span>
             </div>
             </Link>

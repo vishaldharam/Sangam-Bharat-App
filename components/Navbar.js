@@ -89,18 +89,12 @@ const Navbar = ({ logout, user, cart }) => {
 
       <div className="flex px- md:px-5 sm:mt-2 sm:ml-2">
         <div className="flex rounded-l-sm  tab:w-[490px] w-[290px]  medium:w-[500px] sm:h-[51px] md:h-[45px] h-[46px] ml-2 mt-2  md:mx-0 my-1 md:my-1  ">
-          <input type="text" id="esearch" placeholder="Search from our 1000+ products" name="input" value={input} onChange={handleChange}  autoComplete='off' className="w-full bg-slate-50  border-l border-t border border-blue-900  focus:border-gray-500 focus:backdrop:-2 rounded-md  text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+          <input type="text" id="esearch" placeholder="Search from our 1000+ products" name="search"  value={input} onChange={handleChange}  autoComplete='off' className="w-full bg-slate-50  border-l border-t border border-blue-900  focus:border-gray-500 focus:backdrop:-2 rounded-md  text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
         </div>
         <div className="search my-2 sm:my-3  cursor-pointer  py-[4px] sm:py-[7px] xl:py-[7px] px-[6px] rounded-r-md border-gray-500  md:ml-0   sm:mt-[8px] md:mt-[4px]">
           <CiSearch className='text-4xl  md:text-3xl' />
         </div>
-        {result.length > 0 && input.length > 0 && <div onMouseOver={()=>{toggledropdown,setdropdown(false)}} onMouseLeave={()=>{toggleClosedropdown}} className='absolute z-10   bg-white divide-y divide-gray-100 min-w-[500px] rounded-lg shadow top-[100px] md:top-16 sm:top-[115px] dark:bg-gray-700'> <ul className='py-1    text-gray-700 dark:text-gray-200 min-w-[300px]'>
-           
-               {result.map((item, i)=>{
-               return <Link href={`/Search/${item.name}`} key={i}><li onClick={()=>{setinput(item.name),setResult([])}} className=''><div className="cursor-pointer flex  w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white ">{item.name}<div className='right-0 bottom-0'></div>
-               </div></li></Link>})}
-              
-                </ul></div>}
+       
       </div>
       <div className=" medium:flex hidden nav md:mr-4">
         <ul className='flex items-center  text-blue-950 space-x-3 md:space-x-6 font-bold mx-2 '>
