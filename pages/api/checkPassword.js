@@ -5,7 +5,7 @@ const handler = async (req, res) => {
 
     if (req.method == 'POST') {
         const USER_EMAIL = req.body.EMAIL
-        const RES = await fetch("http://localhost:3000/api/getuser", {
+        const RES = await fetch("https://sangam-bharat-app.vercel.app/api/getuser", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
