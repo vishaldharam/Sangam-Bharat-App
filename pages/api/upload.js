@@ -59,7 +59,7 @@ export default async function handler(req, res) {
 
 
   //   //make an api call to add product
-  const data = await fetch('http://localhost:3000/api/addProducts', {
+  const data = await fetch('https://sangam-bharat-app.vercel.app/api/addProducts', {
     headers: {
       'Content-Type': 'application/json',
     },

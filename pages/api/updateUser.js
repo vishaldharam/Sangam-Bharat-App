@@ -5,7 +5,7 @@ const handler = async (req, res) =>{
    
    const {EMAIL,NAME,ADDRESS,PINCODE,PHONE} = req.body
    const USER_EMAIL = EMAIL
-   const RES = await fetch("http://localhost:3000/api/getuser", {
+   const RES = await fetch("https://sangam-bharat-app.vercel.app/api/getuser", {
        method: "POST",
        headers: {
            'Content-Type': 'application/json',
