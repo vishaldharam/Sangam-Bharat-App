@@ -43,18 +43,16 @@ function CertificatePage() {
     <>
       <Head>
         <meta property='og:site_name' content='Certificate of Achievement' />
-        <meta property='og:title' content='Check out this certificate!' />
-        <meta
-          property='og:image'
-          itemProp='image'
-          content='https://www.onlinewritingjobs.com/wp-content/uploads/2017/11/apostrophe-209x300.png'
-        />
+        <meta property='og:title' content='Aromal Jose Baby Stage zero certificate' />
+        <meta property='og:description' content={`Hey! Check out my abouv certificate[]`} />
+
+        <meta property='og:image' itemProp='image' content='https://sangam-bharat-app.vercel.app/api/certificate' />
         <meta property='og:type' content='website' />
         <meta property='og:image:type' content='image/png' />
         <meta property='og:image:width' content='300' />
         <meta property='og:image:height' content='300' />
-        <meta property='og:url' content={`http://localhost:3000/certificate/${certificateId}`} />
         <meta property='og:type' content='website' />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className='relative flex flex-col overflow-hidden rounded-[15px] bg-gradient-to-b from-[rgba(219,240,239,1)] to-[rgba(89,188,179,1)] px-3 py-5 text-black shadow-lg'>
         {/* Header */}
