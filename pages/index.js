@@ -42,10 +42,6 @@ export default function Home() {
 
   const [dynamicURL, setDynamicUrl] = useState('')
 
-  useEffect(() => {
-    generateDynamicImage()
-  })
-
   const generateDynamicImage = async () => {
     fetch('https://sangam-bharat-app.vercel.app/api/certificate')
       .then(response => response.blob())
@@ -67,7 +63,7 @@ export default function Home() {
         <meta property='og:title' content='Aromal Jose Baby Stage zero certificate' />
         <meta property='og:description' content={`Hey! Check out my abouv certificate[]`} />
 
-        <meta property='og:image' itemProp='image' content={dynamicURL} />
+        <meta property='og:image' itemProp='image' content='http://locahost:3004/api/certificate' />
         <meta property='og:type' content='website' />
         <meta property='og:image:type' content='image/png' />
         <meta property='og:image:width' content='300' />
