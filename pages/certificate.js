@@ -49,8 +49,8 @@ function CertificatePage() {
         <meta property='og:image' itemProp='image' content='https://sangam-bharat-app.vercel.app/api/certificate' />
         <meta property='og:type' content='website' />
         <meta property='og:image:type' content='image/png' />
-        <meta property='og:image:width' content='300' />
-        <meta property='og:image:height' content='300' />
+        <meta property='og:image:width' content='600' />
+        <meta property='og:image:height' content='600' />
         <meta property='og:type' content='website' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
