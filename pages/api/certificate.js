@@ -68,9 +68,9 @@ export default async function handler(request) {
         >
           {/* Logo Section */}
           <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-            <img src='http://localhost:3003/icons/abouv-icon.svg' alt='Icon' width='48' height='48' />
+            <img src='https://sangam-bharat-app.vercel.app/icons/abouv-icon.svg' alt='Icon' width='48' height='48' />
             <img
-              src='http://localhost:3003/icons/abouv-text.svg'
+              src='https://sangam-bharat-app.vercel.app/icons/abouv-text.svg'
               alt='Icon'
               width='97'
               height='31'
@@ -87,7 +87,12 @@ export default async function handler(request) {
               gap: '8px'
             }}
           >
-            <img src='http://localhost:3003/icons/certificate-badge.svg' alt='Icon' width='43' height='53' />
+            <img
+              src='https://sangam-bharat-app.vercel.app/icons/certificate-badge.svg'
+              alt='Icon'
+              width='43'
+              height='53'
+            />
             <div
               style={{
                 display: 'flex',
@@ -199,7 +204,7 @@ export default async function handler(request) {
           }}
         >
           <img
-            src='http://localhost:3003/icons/ceo-sign.svg'
+            src='https://sangam-bharat-app.vercel.app/icons/ceo-sign.svg'
             alt='Icon'
             width='70'
             height='45'
@@ -230,7 +235,7 @@ export default async function handler(request) {
         </div>
 
         <img
-          src='http://localhost:3003/icons/certificate-bg-icon.svg'
+          src='https://sangam-bharat-app.vercel.app/icons/certificate-bg-icon.svg'
           alt='bg'
           width='300'
           height='200'
@@ -243,7 +248,7 @@ export default async function handler(request) {
           }}
         />
         <img
-          src='http://localhost:3003/icons/certificate-bg-icon5.svg'
+          src='https://sangam-bharat-app.vercel.app/icons/certificate-bg-icon5.svg'
           alt='bg'
           width='300'
           height='200'
@@ -256,7 +261,7 @@ export default async function handler(request) {
           }}
         />
         <img
-          src='http://localhost:3003/icons/certificate-bg-icons2.svg'
+          src='https://sangam-bharat-app.vercel.app/icons/certificate-bg-icons2.svg'
           alt='bg'
           width='300'
           height='200'
@@ -269,7 +274,7 @@ export default async function handler(request) {
           }}
         />
         <img
-          src='http://localhost:3003/icons/certificate-bg-icon3.svg'
+          src='https://sangam-bharat-app.vercel.app/icons/certificate-bg-icon3.svg'
           alt='bg'
           width='190'
           height='150'
@@ -282,7 +287,7 @@ export default async function handler(request) {
           }}
         />
         <img
-          src='http://localhost:3003/icons/certificate-bg-icon4.svg'
+          src='https://sangam-bharat-app.vercel.app/icons/certificate-bg-icon4.svg'
           alt='bg'
           width='180'
           height='140'
