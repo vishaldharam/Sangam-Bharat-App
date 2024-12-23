@@ -75,7 +75,7 @@ function CertificatePage() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <div className='min-h-screen bg-white w-full font-outfit px-4 py-6 md:py-12'>
+      <div className='min-h-screen bg-white w-full font-outfit px-4 py-6 md:py-10'>
         <div className='w-full px-2 lg:px-[60px]'>
           <div className='flex flex-col w-full lg:flex-row  h-full gap-6 lg:gap-10'>
             {/* Certificate Section - Adjusted height */}
@@ -159,7 +159,7 @@ function CertificatePage() {
             </div>
 
             {/* Features Section */}
-            <div className='bg-[rgba(1,29,36,1)]  text-white  rounded-[16px]'>
+            <div className='bg-[rgba(1,29,36,1)]  text-white mb-6   rounded-[16px]'>
               <div className='flex justify-between items-center px-10 pt-10 mb-5 '>
                 <h1 className='text-[28px] leading-9 font-semibold'>Get your certificate</h1>
                 <a target='_blank' href={'http://localhost:3000/sign-up'}>
@@ -173,7 +173,7 @@ function CertificatePage() {
                 <h2 className='text-[22px] leading-7 px-8 '>What you get from abouv</h2>
               </div>
 
-              <div className='space-y-14 px-10 '>
+              <div className='space-y-12 py-0 px-10 '>
                 {features.map((feature, index) => (
                   <div key={index} className='flex items-start gap-6'>
                     <img src={`/icons/features/${feature.imageUrl}`} width={58} height={58} alt='trophy-icon' />
