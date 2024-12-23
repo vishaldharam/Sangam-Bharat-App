@@ -41,7 +41,7 @@ const gradeData = [
 ]
 
 const CertificateCard = ({ stage, completed, certificate }) => {
-  const certificateRef = useRef < HTMLDivElement > null
+  const certificateRef = useRef(null)
 
   const captureAndShare = async () => {
     try {
