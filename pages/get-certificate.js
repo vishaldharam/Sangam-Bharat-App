@@ -37,6 +37,24 @@ const gradeData = [
   { group: 'G7', range: '  80  -  89%  ' },
   { group: 'G8', range: '  90  -  100%  ' }
 ]
+
+const features = [
+  {
+    title: 'Win Big with Monthly Contests',
+    desc: 'Compete for exclusive internships and rewards.',
+    imageUrl: '/trophy-icon.svg'
+  },
+  {
+    title: 'Unlock Opportunities:',
+    desc: '1,000+ jobs and internships from top companies.',
+    imageUrl: '/bag-icon.svg'
+  },
+  {
+    title: 'Assess Your Job Readiness',
+    desc: 'Detailed reports to assess and improve your job readiness.',
+    imageUrl: '/brain-icon.svg'
+  }
+]
 function CertificatePage() {
   const certificateId = 123 // Replace this dynamically based on the user
 
@@ -58,27 +76,21 @@ function CertificatePage() {
       </Head>
 
       <div className='min-h-screen bg-white w-full font-outfit px-4 py-6 md:py-12'>
-        <div className='max-w-7xl mx-auto'>
-          <div className='flex flex-col w-full lg:flex-row gap-6 lg:gap-8'>
+        <div className='w-full px-2 lg:px-[60px]'>
+          <div className='flex flex-col w-full lg:flex-row  h-full gap-6 lg:gap-10'>
             {/* Certificate Section - Adjusted height */}
-            <div className=' relative w-full lg:w-[60%]'>
-              <div className='relative flex flex-col overflow-hidden rounded-[15px] border border-[rgba(1,29,36,1)] bg-gradient-to-b from-[rgba(219,240,239,1)] to-[rgba(89,188,179,1)] px-5 py-5 text-black shadow-lg'>
+            <div className='relative w-full mb-14 lg:h-[25%] lg:w-[60%]'>
+              <div className='relative flex flex-col overflow-hidden rounded-[15px] border border-[rgba(0,102,127,1)] bg-gradient-to-b from-[rgba(219,240,239,1)] to-[rgba(89,188,179,1)] px-5 py-5 text-black shadow-lg'>
                 {/* Header */}
                 <div className='mb-4 flex items-center justify-between'>
                   <div className='flex gap-3'>
-                    <Image src='/icons/abouv-icon.svg' alt='Icon' width={48} height={48} className='pt-2' />
+                    <img src='/icons/abouv-icon.svg' alt='Icon' width={48} height={48} className='pt-2' />
                     <div className='flex items-end'>
-                      <Image
-                        src='/icons/abouv-text.svg'
-                        alt='Icon'
-                        width={97}
-                        height={31}
-                        className='object-contain' // Ensures no stretching
-                      />
+                      <img src='/icons/abouv-text.svg' alt='Icon' width={97} height={31} className='object-contain' />
                     </div>
                   </div>
                   <div className='flex items-center gap-2'>
-                    <Image src='/icons/certificate-badge.svg' alt='Icon' width={43} height={53} />
+                    <img src='/icons/certificate-badge.svg' alt='Icon' width={43} height={53} />
                     <div>
                       <p className='text-[14px] font-medium leading-[14px] text-[rgba(1,45,56,1)]'>Date of Issue</p>
                       <p className='text-[10px] font-normal leading-[14px] text-[rgba(1,45,56,1)]'>
@@ -90,62 +102,54 @@ function CertificatePage() {
 
                 {/* Content */}
                 <div className='mt-8 flex flex-col gap-6 text-center'>
-                  <p className='text-[17px] font-normal leading-6 text-[rgba(1,104,130,1)]'>This is to certify that</p>
-                  <h1 className='text-[39px] font-bold leading-9 text-[rgba(1,45,56,1)]'>
+                  <p className='text-[clamp(14px,2vw,17px)] font-normal leading-6 text-[rgba(1,104,130,1)]'>
+                    This is to certify that
+                  </p>
+                  <h1 className='text-[clamp(24px,4vw,39px)] font-bold leading-[clamp(30px,5vw,9rem)] text-[rgba(1,45,56,1)]'>
                     {response.userInfo.firstName} {response.userInfo.lastName}
                   </h1>
-                  <div className='flex flex-col gap-1 text-[21px] leading-6 text-[rgba(1,45,56,1)]'>
+                  <div className='flex flex-col gap-1 text-[clamp(18px,3vw,21px)] leading-6 text-[rgba(1,45,56,1)]'>
                     <p className='font-medium'>has completed Stage {response.stats.stageId} assessments with</p>
                     <h2 className='font-bold'>Grade {response.stats.grade}</h2>
                   </div>
                 </div>
 
                 {/* Background Images */}
-                <Image
+                <img
                   src='/icons/certificate-bg-icon.svg'
-                  width={253}
-                  height={161}
                   alt='bg'
-                  className='absolute bottom-10 right-0 z-20'
+                  className='absolute bottom-10 right-0 z-20 w-[clamp(150px,40%,253px)] h-auto'
                 />
-                <Image
+                <img
                   src='/icons/certificate-bg-icons2.svg'
-                  width={268}
-                  height={173}
                   alt='bg'
-                  className='absolute bottom-[-20px] right-[175px] z-20'
+                  className='absolute bottom-[-20px] right-[10%] z-20 w-[clamp(150px,40%,268px)] h-auto'
                 />
-                <Image
+                <img
                   src='/icons/certificate-bg-icons2.svg'
-                  width={267}
-                  height={173}
                   alt='bg'
-                  className='absolute bottom-[134px] left-0 z-20'
+                  className='absolute bottom-[10%] left-0 z-20 w-[clamp(150px,40%,267px)] h-auto'
                 />
-                <Image
+                <img
                   src='/icons/certificate-bg-icon3.svg'
-                  width={157}
-                  height={101}
                   alt='bg'
-                  className='absolute bottom-[114px] left-[245px] z-20'
+                  className='absolute bottom-[15%] left-[25%] z-20 w-[clamp(100px,25%,157px)] h-auto'
                 />
-                <Image
+                <img
                   src='/icons/certificate-bg-icon4.svg'
-                  width={181}
-                  height={117}
                   alt='bg'
-                  className='absolute bottom-0 left-[100px] z-20'
+                  className='absolute bottom-0 left-[10%] z-20 w-[clamp(120px,30%,181px)] h-auto'
                 />
 
                 {/* Signature */}
                 <div className='mt-12 flex justify-center'>
-                  <Image src='/icons/ceo-sign.svg' width={102} height={80} alt='sign' />
+                  <img src='/icons/ceo-sign.svg' alt='sign' className='w-[clamp(60px,20%,102px)] h-auto' />
                 </div>
 
                 {/* Grades */}
                 <div className='mt-8 flex flex-wrap justify-center gap-1'>
                   {gradeData.map((grade, index) => (
-                    <h2 key={index} className='text-[10px] font-normal leading-4 text-[rgba(1,45,56,1)]'>
+                    <h2 key={index} className='text-[clamp(8px,2vw,10px)] font-normal leading-4 text-[rgba(1,45,56,1)]'>
                       {grade.group} : {grade.range}
                       {index !== gradeData.length - 1 && <span className='px-1.5'>|</span>}
                     </h2>
@@ -153,46 +157,34 @@ function CertificatePage() {
                 </div>
               </div>
             </div>
+
             {/* Features Section */}
-            <div className='bg-[#001A1E] text-white  rounded-3xl'>
-              <div className='flex justify-between items-center px-8 pt-8 mb-5 '>
+            <div className='bg-[rgba(1,29,36,1)]  text-white  rounded-[16px]'>
+              <div className='flex justify-between items-center px-10 pt-10 mb-5 '>
                 <h1 className='text-[28px] leading-9 font-semibold'>Get your certificate</h1>
-                <button className='bg-[rgba(41,143,150,1)] text-white px-7 py-3 rounded-[8px] text-xl hover:bg-opacity-90 transition-opacity'>
-                  Signup now
-                </button>
+                <a target='_blank' href={'http://localhost:3000/sign-up'}>
+                  <button className='bg-[rgba(41,143,150,1)] text-white px-7 py-3 rounded-[8px] text-xl hover:bg-opacity-90 transition-opacity'>
+                    Signup now
+                  </button>
+                </a>
               </div>
 
               <div className='bg-[rgba(1,68,85,1)] p-3 mb-12'>
                 <h2 className='text-[22px] leading-7 px-8 '>What you get from abouv</h2>
               </div>
 
-              <div className='space-y-12 px-8 '>
-                <div className='flex items-start gap-6'>
-                  <div className='bg-purple-200 p-4 rounded-2xl'></div>
-                  <div>
-                    <h3 className='text-2xl font-medium mb-2'>Win Big with Monthly Contests</h3>
-                    <p className='text-gray-300 text-xl'>Compete for exclusive internships and rewards.</p>
+              <div className='space-y-14 px-10 '>
+                {features.map((feature, index) => (
+                  <div key={index} className='flex items-start gap-6'>
+                    <img src={`/icons/features/${feature.imageUrl}`} width={58} height={58} alt='trophy-icon' />
+                    <div>
+                      <h3 className='text-[18px] leading-[22px] font-semibold mb-2'>{feature.title}</h3>
+                      <p className='text-[18px] text-[rgba(230,230,230,1)] leading-[22px] font-light'>{feature.desc}</p>
+                    </div>
                   </div>
-                </div>
-
-                <div className='flex items-start gap-6'>
-                  <div className='bg-yellow-200 p-4 rounded-2xl'></div>
-                  <div>
-                    <h3 className='text-2xl font-medium mb-2'>Unlock Opportunities</h3>
-                    <p className='text-gray-300 text-xl'>1,000+ jobs and internships from top companies.</p>
-                  </div>
-                </div>
-
-                <div className='flex items-start gap-6'>
-                  <div className='bg-teal-200 p-4 rounded-2xl'></div>
-                  <div>
-                    <h3 className='text-2xl font-medium mb-2'>Assess Your Job Readiness</h3>
-                    <p className='text-gray-300 text-xl'>Detailed reports to assess and improve your job readiness.</p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
-            x{' '}
           </div>
         </div>
       </div>
