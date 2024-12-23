@@ -57,14 +57,17 @@ function CertificatePage() {
         {/* ,dsmds,d */}
 
         <title>Aromal Jose Baby Stage zero certificate</title>
-        <meta name='description' content='Hey! Check out my abouv certificate[]' />
+        <meta
+          name='description'
+          content='Hey! Check out my abouv certificate[https://sangam-bharat-app.vercel.app/certificates]'
+        />
         <meta property='og:image:type' content='image/png' />
         <meta property='og:image:width' content='400' />
         <meta property='og:image:height' content='300' />
         <meta property='og:image' content='url_image' />
 
         {/* <!-- Facebook Meta Tags --> */}
-        <meta property='og:url' content='https://sangam-bharat-app.vercel.app/certificate' />
+        <meta property='og:url' content='https://sangam-bharat-app.vercel.app/certificates' />
         <meta property='og:type' content='website' />
         <meta property='og:title' content='Aromal Jose Baby Stage zero certificate' />
         <meta property='og:description' content='Hey! Check out my abouv certificate[]' />
@@ -73,7 +76,7 @@ function CertificatePage() {
         {/* <!-- Twitter Meta Tags --> */}
         <meta name='twitter:card' content='summary_large_image' />
         <meta property='twitter:domain' content='sangam-bharat-app.vercel.app' />
-        <meta property='twitter:url' content='https://sangam-bharat-app.vercel.app/certificate' />
+        <meta property='twitter:url' content='https://sangam-bharat-app.vercel.app/certificates' />
         <meta name='twitter:title' content='Aromal Jose Baby Stage zero certificate' />
         <meta name='twitter:description' content='Hey! Check out my abouv certificate[]' />
         <meta name='twitter:image' content='https://sangam-bharat-app.vercel.app/api/certificate' />
