@@ -43,43 +43,17 @@ function CertificatePage() {
   return (
     <>
       <Head>
-        {/* <meta property='og:site_name' content='Certificate of Achievement' />
+        <meta property='og:site_name' content='Certificate of Achievement' />
         <meta property='og:title' content='Aromal Jose Baby Stage zero certificate' />
         <meta property='og:description' content={`Hey! Check out my abouv certificate[]`} />
 
         <meta property='og:image' itemProp='image' content='https://sangam-bharat-app.vercel.app/api/certificate' />
         <meta property='og:type' content='website' />
         <meta property='og:image:type' content='image/png' />
-        <meta property='og:image:width' content='600' />
-        <meta property='og:image:height' content='600' />
-        <meta property='og:type' content='website' /> */}
-
-        {/* ,dsmds,d */}
-
-        <title>Aromal Jose Baby Stage zero certificate</title>
-        <meta
-          name='description'
-          content='Hey! Check out my abouv certificate[https://sangam-bharat-app.vercel.app/certificates]'
-        />
-        <meta property='og:image:type' content='image/png' />
         <meta property='og:image:width' content='400' />
-        <meta property='og:image:height' content='300' />
-        <meta property='og:image' content='url_image' />
-
-        {/* <!-- Facebook Meta Tags --> */}
-        <meta property='og:url' content='https://sangam-bharat-app.vercel.app/certificates' />
+        <meta property='og:image:height' content='400' />
         <meta property='og:type' content='website' />
-        <meta property='og:title' content='Aromal Jose Baby Stage zero certificate' />
-        <meta property='og:description' content='Hey! Check out my abouv certificate[]' />
-        <meta property='og:image' itemProp='image' content='https://sangam-bharat-app.vercel.app/api/certificate' />
 
-        {/* <!-- Twitter Meta Tags --> */}
-        <meta name='twitter:card' content='summary_large_image' />
-        <meta property='twitter:domain' content='sangam-bharat-app.vercel.app' />
-        <meta property='twitter:url' content='https://sangam-bharat-app.vercel.app/certificates' />
-        <meta name='twitter:title' content='Aromal Jose Baby Stage zero certificate' />
-        <meta name='twitter:description' content='Hey! Check out my abouv certificate[]' />
-        <meta name='twitter:image' content='https://sangam-bharat-app.vercel.app/api/certificate' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
